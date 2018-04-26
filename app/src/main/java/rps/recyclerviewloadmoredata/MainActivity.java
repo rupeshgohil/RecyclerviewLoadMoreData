@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.addItemDecoration(new VerticalLineDecorated(2));
         myMovieAdapter  = new MyMovieAdapter(this,movieModalArrayList);
         mRecyclerView.setAdapter(myMovieAdapter);
+        //Loadmore
         myMovieAdapter.setLoadMoreListener(new LoadMoreListener(){
 
             @Override
